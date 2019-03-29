@@ -1,0 +1,16 @@
+Joe Clements
+Yacob Alemneh
+
+Q1: This code was inefficient in that it was trying to print the same output by calling multiple lines of the same code. Now, the reader can simply look at the one method to understand and it only has to be fixed in one place.
+
+Code Smell = Dispensables
+
+To Refactor this code, we used the Eclipse code refactor application that took the repeated code and declared a new method that took the parameters (Map<String,Plugin> pluginMap, Plugin plugin). This allowed the program to simply call an instance of the method.
+
+Q3: No, updateAndTrim does not belong to the nodes class as the primary function of updateAndTrim is to concatenate the list of known nodes/computers and then trim the unnecessary labels.
+
+Code Smell: Refused Bequest
+
+Q4: In order to eliminate this repetitious code, we need to remove the repeated code and write a for loop to cover the iterations.
+
+Code Smell: Dispensable
